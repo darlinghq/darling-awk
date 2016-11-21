@@ -39,3 +39,4 @@ set_target_properties(awkexe PROPERTIES OUTPUT_NAME awk)
 install(TARGETS awkexe
 	DESTINATION libexec/darling/usr/bin)
 
+install(FILES src/awk.1 DESTINATION libexec/darling/usr/share/man/man1)
