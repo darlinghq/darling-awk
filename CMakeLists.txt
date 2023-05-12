@@ -23,6 +23,7 @@ include(InstallSymlink)
 set(BINARY_PACKAGING_MODE ON)
 
 set(awk_sources
+	src/awkgram.tab.c
 	src/b.c
 	src/lex.c
 	src/lib.c
@@ -31,7 +32,6 @@ set(awk_sources
 	src/proctab.c
 	src/run.c
 	src/tran.c
-	src/ytab.c
 )
 
 add_darling_executable(awkexe ${awk_sources})
